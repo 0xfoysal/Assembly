@@ -53,4 +53,23 @@ XOR → bitwise XOR
 
 xor eax, eax → EAX = 0
 ```
+Common Reversing Patterns
+```
+cmp eax, 10
+je  success
+→ if (eax == 10) success;
 
+test eax, eax
+jz fail
+→ if (eax == 0) fail;
+
+```
+
+__fastcall (32-bit common convention)
+```
+ECX → 1st argument
+EDX → 2nd argument
+Stack → remaining arguments
+EAX → return value
+
+```
