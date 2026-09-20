@@ -40,6 +40,8 @@ main proc
     int 21h
 main endp
 end main
+
 mov, int, add, sub, cmp ইত্যাদি instruction সাধারণত .code section-এর মধ্যে থাকে।
 সহজভাবে: যেখানে computer কী কাজ করবে সেই instruction লেখা হয়।
 ```
+
