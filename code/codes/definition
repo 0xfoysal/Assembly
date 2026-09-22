@@ -1,0 +1,7 @@
+push ebp       → Save old frame pointer
+mov ebp, esp   → Make current ESP the new frame pointer
+sub esp, 16    → Reserve 16 bytes for local variables
+---------------------------------------------------
+push ebp        = Save old FP
+mov ebp, esp    = Create new FP
+sub esp, N      = Make room for local variables
