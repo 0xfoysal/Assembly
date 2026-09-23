@@ -1,0 +1,21 @@
+Bits and Bytes
+Data type sizes vary based on architecture. These are the most common sizes and are what you will come across when working with desktop Windows and Linux.
+
+Bit is one binary digit. Can be 0 or 1.
+Nibble is 4 bits.
+Byte is 8 bits.
+Word is 2 bytes.
+Double Word (DWORD) is 4 bytes. Twice the size of a word.
+Quad Word (QWORD) is 8 bytes. Four times the size of a word.
+
+
+Offsets
+Data positions are referenced by how far away they are from the address
+of the first byte of data, known as the base address (or just the address),
+of the variable. The distance a piece of data is from its base address is
+considered the offset. For example, let's say we have some data, 12345678.
+Just to push the point, let's also say each number is 2 bytes. With this information,
+1 is at offset 0x0, 2 is at offset 0x2, 3 is at offset 0x4, 4 is at offset 0x6, and so on.
+You could reference these values with the format BaseAddress+0x##.
+BaseAddress+0x0 or just BaseAddress would contain the 1, BaseAddress+0x2 would be the 2, and so on.
+
