@@ -5,3 +5,9 @@ sub esp, 16    → Reserve 16 bytes for local variables
 push ebp        = Save old FP
 mov ebp, esp    = Create new FP
 sub esp, N      = Make room for local variables
+---------------------------------------------------
+
+0x1234       → address/value হিসেবে সরাসরি number
+[0x1234]     → ঐ address-এর ভিতরের memory value
+dword_0x1234 → disassembler-এর দেওয়া DWORD variable/label
+[] দেখলে প্রথমেই ভাববে: “memory-এর ভিতরের value আনছে।”
