@@ -19,3 +19,8 @@ Just to push the point, let's also say each number is 2 bytes. With this informa
 You could reference these values with the format BaseAddress+0x##.
 BaseAddress+0x0 or just BaseAddress would contain the 1, BaseAddress+0x2 would be the 2, and so on.
 
+
+Windows binary in PE format
+Linux binary in ELF format
+
+
