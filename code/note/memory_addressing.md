@@ -31,6 +31,22 @@ mov eax, [ebp + ecx*2 + 4]
 
 ---
 
+1. EBP <br>
+Base address হিসেবে কাজ করছে।
+
+3. ECX * 2 <br>
+ECX-কে 2 দিয়ে multiply করা হচ্ছে।
+
+4. +4 <br>
+শেষে 4 যোগ হচ্ছে।
+
+5. [address] <br>
+Calculated address-টাকে memory address হিসেবে ব্যবহার করছে।
+
+7. mov eax <br>
+Memory থেকে পাওয়া 4-byte value EAX-এ যাবে।
+
+
 ## কীভাবে কাজ করে?
 
 প্রথমে CPU **Effective Address (EA)** হিসাব করে:
